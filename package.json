@@ -1,0 +1,19 @@
+{
+  "name": "scheme-stream",
+  "version": "0.0.0",
+  "description": "Streaming Scheme interpreter",
+  "main": "index.js",
+  "dependencies": {
+    "commander": "^2.2.0",
+    "highland": "^1.25.4",
+    "split": "^0.3.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wetmore",
+  "license": "ISC"
+}
