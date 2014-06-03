@@ -1,5 +1,3 @@
-_ = require 'highland'
-
 Tokenizer = (stream) =>
   stream.consume (err, line, push, next) =>
     if err

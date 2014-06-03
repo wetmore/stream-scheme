@@ -1,5 +1,6 @@
 Tokenizer = require './tokenizer'
 split = require 'split'
+group = require './grouper'
 
 program = require 'commander'
 fs = require 'fs'
@@ -15,4 +16,7 @@ if program.args[0]
 
   _(source)
     .through Tokenizer
-    .each _.log
+    .through group
+    .each(_.log)
+
+# _(['(', 'add', '(', 'add', 3, 2, ')', 1, ')']).toArray group
